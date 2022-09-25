@@ -1,0 +1,15 @@
+.inputs {
+    width: 50px;
+}
+
+.basic-calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.style-paragraph {
+    font-weight: bold;
+    color: red;
+    text-decoration:line-through;
+}
