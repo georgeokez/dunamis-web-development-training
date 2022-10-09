@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color:#9fb8ad;
+}
+
+a:hover {
+  color: #000;
+}
+
+.menu-bar {
+  display: flex;
+  font-family: "Arial", "PT-Sans", "sans-serif";
+  background-color: #3e4e62;
+  font-size: 18px;
+  color: #fff; 
+  justify-content: space-between;
+}
+
+.menu-bar ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 62px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.menu-bar ul li{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.menu-bar ul li:hover{
+  background-color: #1e314c;
+  cursor: pointer;
+  color: #abb7d3;
+}
+
+.menu-logo {
+  color: #fff;
+}
+
+.hamburger-menu {
+  display: none;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 80px;
+  gap: 40px;
+  padding: 40px 0;
+  margin: 0 auto;
+  max-width: 85%;
+  /* flex-wrap: wrap; */
+}
+
+.hero-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color:#9fb8ad;
+}
+
+.hero-item-img > img {
+  width: 377px;
+  height: 181px;
+}
+
+.encounter-section {
+  display: flex;
+  margin: 0 auto;
+  max-width: 85%;;
+  height: fit-content;
+  width: 100vw;
+  padding: 50px 0 100px 0;
+}
+
+.encounter-image {
+  max-width: 50%;
+}
+
+.encounter-image > img {
+  max-width: -webkit-fill-available;
+}
+
+.encounter-content {
+  max-width: 50%;
+  background-image: linear-gradient(to right, white, #bdbdbd);
+  font-family: "Oswald", sans-serif;
+  padding: 0 30px;
+}
+
+.encounter-content h2 {
+  color: #465362;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  margin: 0 0 30px 0;
+}
+
+.encounter-content p {
+  color: #465362;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+
+.quote-section {
+  background-image: url(./assets/quote/dunamis_quote_img.jpeg);
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  height: fit-content;
+  color: white;
+}
+
+.quote-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  padding: 50px 200px;
+}
+
+.quote-section h2{ 
+  font-size: 38px;
+  font-style: italic;
+}
+
+.quote-section p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  /* text-align: left; */
+}
+
+
+@media only screen and (max-width: 900px) {
+  .menu-bar ul li {
+    display: none;
+  }
+  .hamburger-menu {
+    display: inline;
+  }
+}
